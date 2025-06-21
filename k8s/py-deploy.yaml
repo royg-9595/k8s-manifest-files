@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: python-deploy
+  name: python-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: python-deploy
+    spec:
+      containers:
+      - image: 365591124323.dkr.ecr.us-east-1.amazonaws.com/jayanthroyg/python-app:v1.20
+        name: python-app
+        resources: {}
+status: {}
