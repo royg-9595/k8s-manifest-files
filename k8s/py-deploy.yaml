@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: python-app # This was missing the name: key
-          image: 365591124323.dkr.ecr.us-east-1.amazonaws.com/jayanthroyg/musicshare:v1.5
+          image: 365591124323.dkr.ecr.us-east-1.amazonaws.com/jayanthroyg/musicshare:v1.6
           imagePullPolicy: Always # This should be indented under the container it belongs to
           resources: {}
 status: {}
